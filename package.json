@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "css review natours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass ./sass/main.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gadawag/natours.git"
+  },
+  "author": "Johny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gadawag/natours/issues"
+  },
+  "homepage": "https://github.com/gadawag/natours#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
