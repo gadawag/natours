@@ -48,6 +48,7 @@ body {
     font-weight: 700;
     display: inline-block;
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-clip: text;
     -webkit-background-clip: text; // clip the backgroup where the text is
     color: transparent;
     transition: all .2s;
