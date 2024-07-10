@@ -6,7 +6,7 @@
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-        <link rel="stylesheet" href="css/icon-font.css">
+        <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
@@ -56,9 +56,34 @@
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
-                            <img class="composition__photo composition__photo--p1" src="./img/nat-1-large.jpg" alt="Photo 1">
+                            <!--
+                                Responsive Image in HTML
+                                srcset: the with if the actual image
+                                sizes: the vw that the image occupies when the max-width is 900px. 300px is the default image size in browser desktop
+                                src: is used when browser does not understand what srcset and sizes are
+                                all these info are needed for the browser to decide which image to use
+                            -->
+                            <img 
+                                class="composition__photo composition__photo--p1"
+                                srcset="./img/nat-1.jpg 300w, ./img/nat-1-large.jpg 1000w" alt="Photo 1" 
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                src="./img/nat-1-large.jpg">
+
+                            <img 
+                                class="composition__photo composition__photo--p2"
+                                srcset="./img/nat-2.jpg 300w, ./img/nat-2-large.jpg 1000w" alt="Photo 1" 
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                src="./img/nat-2-large.jpg">
+                            
+                            <img 
+                                class="composition__photo composition__photo--p3"
+                                srcset="./img/nat-3.jpg 300w, ./img/nat-3-large.jpg 1000w" alt="Photo 1" 
+                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                                src="./img/nat-3-large.jpg">
+
+                            <!-- <img class="composition__photo composition__photo--p1" src="./img/nat-1-large.jpg" alt="Photo 1">
                             <img class="composition__photo composition__photo--p2" src="./img/nat-2-large.jpg" alt="Photo 2">
-                            <img class="composition__photo composition__photo--p3" src="./img/nat-3-large.jpg" alt="Photo 3">
+                            <img class="composition__photo composition__photo--p3" src="./img/nat-3-large.jpg" alt="Photo 3"> -->
                         </div>
                     </div>
                 </div>
@@ -276,7 +301,7 @@
                         srcset="./img/logo-green-small-1x.png 1x, ./img/logo-green-2x.png 2x" 
                         media="(max-width: 37.5em)"
                     />
-                    <img srcset="./img/logo-green-1x.png 1x, ./img/logo-green-2x.png 2x" alt="Full logo">
+                    <img srcset="./img/logo-green-1x.png 1x, ./img/logo-green-2x.png 2x" alt="Full logo" src="./img/logo-green-2x.png">
                 </picture>
             </div>
             <div class="row">
